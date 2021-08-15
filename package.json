@@ -1,23 +1,21 @@
 {
-  "name": "leaderboard",
+  "name": "complimentor-api",
   "version": "1.0.0",
   "description": "IMPORTANT NOTE This is the first time you will use Gitflow. Keep that in mind! Create an npm project with webpack. (If you need a refresher, check the previous project or webpack exercise). Write plain HTML markup with minimum styling (just to make the layout), because you will implement styles in the following steps. Use this wireframe as a guide:.Don't make API calls (you'll do it in a following lesson). Use ES6 modules, with import and export.",
-  "main": "index.js",
+  "main": "webpack.config.js",
   "scripts": {
-    "start": "webpack serve",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack --watch"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/tnyandoro/leaderboard.git"
+    "url": "git+https://github.com/tnyandoro/Complimentor-API.git"
   },
-  "author": "Tendai Nyandoro",
-  "license": "MIT",
+  "author": "",
+  "license": "ISC",
   "bugs": {
-    "url": "https://github.com/tnyandoro/leaderboard/issues"
+    "url": "https://github.com/tnyandoro/Complimentor-API/issues"
   },
-  "homepage": "https://github.com/tnyandoro/leaderboard#readme",
+  "homepage": "https://github.com/tnyandoro/Complimentor-API#readme",
   "devDependencies": {
     "csv-loader": "^3.0.3",
     "hint": "^6.1.4",
