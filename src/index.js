@@ -7,5 +7,7 @@ document.getElementById('getText').addEventListener
 function getText(){
   fetch('sample.txt')
   .then((res)=> res.text())
-  .then((data) => console.log(data))
+  .then((data) => {
+    document.getElementById('output').innerHTML = data;
+  })
 }
