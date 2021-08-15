@@ -7,7 +7,7 @@ document.getElementById('getUsers').addEventListener
 ('click', getUsers);
 document.getElementById('getPosts').addEventListener
 ('click', getPosts);
-document.getElementById('addForm').addEventListener
+document.getElementById('addPost').addEventListener
 ('submit', addPost);
 
 function getText(){
@@ -57,6 +57,7 @@ function getPosts() {
 
 function addPost(e) {
   e.preventDefault();
+
   let title = document.getElementById('title').value;
   let body = document.getElementById('body').value;
   
@@ -66,7 +67,8 @@ function addPost(e) {
     'Accept': 'application/json, text/plain, */*',
     'Content-Type': 'application/json'
   },
-  body: JSON.stringify({title: title, body: body})
+  body: JSON.stringify({title:title, body:body})
   })
   .then((res)=> res.json())
+  .then((data)=> console.log(data))
 }

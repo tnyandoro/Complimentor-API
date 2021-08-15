@@ -5,21 +5,32 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>API SandBox</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
+      crossorigin="anonymous"
+    />
   </head>
   <body>
-    <button id="getText">Get Text</button>
-    <button id="getUsers">Get JSON</button>
-    <button id="getPosts">Get API DATA</button>
-    <div id="output"></div>
-    <form action="" id="addPost">
-      <div>
-        <input type="text" id="title" placeholder="API SandBox" />
+    <div class="container">
+      <h1 class="display-4 mb-4">Fetch API Sendbox</h1>
+      <div class="d-flex">
+        <button class="btn btn-primary" id="getText">Get Text</button>
+        <button class="btn btn-secondary" id="getUsers">Get JSON</button>
+        <button class="btn btn-warning" id="getPosts">Get API DATA</button>
       </div>
-      <div>
-        <textarea id="body" placeholder="body"></textarea>
-      </div>
-      <input type="submit" value="submit" />
-    </form>
+      <div id="output"></div>
+      <form action="submit" id="addPost">
+        <div>
+          <input type="text" id="title" placeholder="title" />
+        </div>
+        <div>
+          <textarea id="body" placeholder="body"></textarea>
+        </div>
+        <input type="submit" value="submit" />
+      </form>
+    </div>
 
     <script src="./index.js"></script>
   </body>
