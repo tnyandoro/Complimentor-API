@@ -20,6 +20,13 @@ function getUsers() {
   .then((res)=> res.json())
   .then((data)=> {
     let output = `<h2>Users</h2>`;
-    console.log(data);
+    data.forEach((user) => {
+      output += `
+      <ul>ID:${user.id}</ul>
+      <ul>Name:${user.name}</ul>
+      <ul>Email:${user.email}</ul>
+      `;
+    });
+    document.getElementById('output').innerHTML = output;
   })
 }
