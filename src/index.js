@@ -54,3 +54,19 @@ function getPosts() {
     document.getElementById('output').innerHTML = output;
   })
 }
+
+function addPost(e) {
+  e.preventDefault();
+  let title = document.getElementById('title').value;
+  let body = document.getElementById('body').value;
+  
+  fetch('https://jsonplaceholder.typicode.com/posts', {
+    method: 'POST',
+  Headers: {
+    'Accept': 'application/json, text/plain, */*',
+    'Content-Type': 'application/json'
+  },
+  body: JSON.stringify({title: title, body: body})
+  })
+  .then((res)=> res.json())
+}
