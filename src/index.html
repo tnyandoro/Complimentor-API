@@ -17,16 +17,16 @@
       <h1 class="display-4 mb-4">Fetch API Sendbox</h1>
       <div class="d-flex">
         <button class="btn btn-primary me-4" id="getText">Get Text</button>
-        <button class="btn btn-secondary me-4" id="getUsers">Get JSON</button>
+        <button class="btn btn-success me-4" id="getUsers">Get JSON</button>
         <button class="btn btn-warning me-4" id="getPosts">Get API DATA</button>
       </div>
       <div id="output"></div>
       <form action="submit" id="addPost">
-        <div>
-          <input type="text" id="title" placeholder="title" />
+        <div class="form-group">
+          <input type="text" id="title" placeholder="title" class="form-control" />
         </div>
-        <div>
-          <textarea id="body" placeholder="body"></textarea>
+        <div class="form-group">
+          <textarea id="body" placeholder="body" class="form-control"></textarea>
         </div>
         <input type="submit" value="submit" />
       </form>
