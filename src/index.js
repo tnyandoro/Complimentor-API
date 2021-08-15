@@ -42,12 +42,11 @@ function getPosts() {
     let output = `<h2>Posts</h2>`;
     data.forEach((post) => {
       output += `
-      <ul>
-      <li>ID:${post.id}</li>
-      <li>Title:${post.title}</li>
-      <li>Body:${post.body}</li>
-      <li>User ID:${post.userId}</li>
-      </ul>
+      <div>
+      <h3>Title:${post.title}</h3>
+      <p>Body:${post.body}</p>
+      <h3>User ID:${post.userId}</h3>
+      </div>
       `;
     });
     document.getElementById('output').innerHTML = output;
