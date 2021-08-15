@@ -44,8 +44,8 @@ function getPosts() {
     let output = `<h2>Posts</h2>`;
     data.forEach((post) => {
       output += `
-      <div>
-      <h3>Title:${post.title}</h3>
+      <div class="container">
+      <h3 class"mb-3">Title:${post.title}</h3>
       <p>Body:${post.body}</p>
       <h3>User ID:${post.userId}</h3>
       </div>
