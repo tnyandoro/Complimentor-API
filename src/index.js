@@ -7,6 +7,8 @@ document.getElementById('getUsers').addEventListener
 ('click', getUsers);
 document.getElementById('getPosts').addEventListener
 ('click', getPosts);
+document.getElementById('addForm').addEventListener
+('submit', addPost);
 
 function getText(){
   fetch('sample.txt')
