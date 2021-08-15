@@ -36,7 +36,7 @@ function getUsers() {
 }
 
 function getPosts() {
-  fetch('posts.json')
+  fetch('https://jsonplaceholder.typicode.com/posts')
   .then((res)=> res.json())
   .then((data)=> {
     let output = `<h2>Posts</h2>`;
