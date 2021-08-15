@@ -1,8 +1,7 @@
-import getClasses from './getClasses';
+import _ from 'lodash';
 
-console.log('ran from index.js');
-getClasses();
+document.getElementById('getText').addEventListener('click', getText);
 
-const obj = {a: 'alpha',b: 'bravo'};
-const newObj = {...obj, c: 'charlie'}
-console.log(newObj)
+function getText(){
+  console.log(123);
+}
